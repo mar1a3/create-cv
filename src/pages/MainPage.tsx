@@ -1,14 +1,18 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Header } from '../Header/Header';
+import { Header } from '../components/Header/Header';
+import { PersonalInfo } from '../components/PersonalInfo/PersonalInfo';
 
 
 
 export const MainPage = () =>{
   return(
+    <>
     <Header/>
+    <PersonalInfo/>
+    </>
   )
-}
+  }
 
 
 
