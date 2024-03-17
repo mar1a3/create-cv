@@ -30,7 +30,7 @@ const BlackTornPaper = styled.div`
     }
 `
 const SectionPaper = styled.div`
-    height:600px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -47,7 +47,7 @@ const InfoBlock = styled.div`
     padding:20px 20px;
     width: 900px;
     height: 400px;
-    top: -280px;
+    top: -100px;
     background-image:url(${HologramEducation});
     border-radius: 20px;
     &:before{
@@ -69,6 +69,15 @@ const InputsBlock = styled.div`
 const Paragraph = styled.p`
     font-size: 30px;
  `
+const WhiteParagraph = styled.p`
+    position: relative;
+    font-family: "Sedgwick Ave Display", sans-serif;
+    font-size:35px;
+    align-self:flex-start;
+    left:100px;
+    top: -20px;
+    color:white;
+ `
 export const Education = () => {
     return (
         <>
@@ -82,13 +91,14 @@ export const Education = () => {
                         <Paragraph>Date of graduation</Paragraph>
                         <CustomCalendar customStyles={{ position: 'relative', top: '-10px', left: '0px' }} />
                         <Paragraph>Academic degree</Paragraph>
-                        <CustomSelect 
+                        <CustomSelect
                             options={[
-                            { value: 'Bachelor',label: 'Bachelor'}, 
-                            { value: 'Master',label: 'Master'}
+                                { value: 'Bachelor', label: 'Bachelor' },
+                                { value: 'Master', label: 'Master' }
                             ]} />
                     </InputsBlock>
                 </InfoBlock>
+                <WhiteParagraph>Skills</WhiteParagraph>
             </SectionPaper>
         </>
     )

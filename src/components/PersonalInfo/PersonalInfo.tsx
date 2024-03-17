@@ -10,13 +10,13 @@ import { CustomUpload } from '../Upload/Upload';
 
 const SectionPaper = styled.div`
     font-family: "Sedgwick Ave Display", sans-serif;
+    background-image: url(${TornPaper});
     width: 100%;
     height: 900px;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content:center;
-    background-image: url(${TornPaper});
 
     & p{
         position: relative;
