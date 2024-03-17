@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Header } from '../components/Header/Header';
 import { PersonalInfo } from '../components/PersonalInfo/PersonalInfo';
-
+import { Education } from '../components/Education/Education';
 
 
 export const MainPage = () =>{
@@ -10,6 +10,7 @@ export const MainPage = () =>{
     <>
     <Header/>
     <PersonalInfo/>
+    <Education/>
     </>
   )
   }
