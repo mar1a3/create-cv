@@ -1,8 +1,10 @@
 import React from 'react';
-import { keyframes, styled } from 'styled-components';
-import  Hologram  from '../assets/img/hologram.jpg';
+import { createGlobalStyle, keyframes, styled } from 'styled-components';
+import Hologram from '../../assets/img/hologram.jpg';
+import { GlobalFont } from '../GlobalFont/GlobalFont';
 
-const beforeRotation = keyframes `
+
+const beforeRotation = keyframes`
   0% {
     transform: rotate(0deg);
   }
@@ -11,8 +13,7 @@ const beforeRotation = keyframes `
     transform: rotate(359deg);
   }
 `
-
-const  BackgroundAnimated = keyframes`
+const BackgroundAnimated = keyframes`
   from {
       background-position: 0 0
   }
@@ -20,10 +21,11 @@ const  BackgroundAnimated = keyframes`
       background-position: 100% 0
   }
 
-`   
+`
 const HeaderElement = styled.div`
-  height: 150px;
+  font-family: "Sedgwick Ave Display", sans-serif;
   margin-left: 100px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +48,7 @@ const H1Element = styled.h1`
   background: url(${Hologram});
   background-repeat: repeat-x;
   background-position: -180px -140px;
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
   color: transparent;
   background-clip: text;
@@ -56,11 +58,14 @@ const H1Element = styled.h1`
 
 export const Header = () => {
   return (
-    <HeaderElement>
-      <H1Element>
-        Create CV
-      </H1Element>
-    </HeaderElement>
+    <>
+      <GlobalFont />
+      <HeaderElement>
+        <H1Element>
+          Create CV
+        </H1Element>
+      </HeaderElement>
+    </>
   )
 }
 
