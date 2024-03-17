@@ -23,7 +23,7 @@ const BlackTornPaper = styled.div`
     & p{
         position: relative;
         padding-left:100px;
-        top:100px;
+        top:80px;
         color:white;
         align-self:flex-start;
         font-size:35px;
@@ -54,7 +54,7 @@ const InfoBlock = styled.div`
         content: '';
         position: absolute;
         width: 1000px;
-        height: 350px;
+        height: 300px;
         right: -30px;
         top: 50px;
         border-radius: 30px;

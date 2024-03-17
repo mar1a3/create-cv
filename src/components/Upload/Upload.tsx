@@ -26,7 +26,7 @@ const beforeUpload = (file: FileType) => {
 
 const CustomUploadWrapper = styled.div`
     position: relative;
-    top: 40px;
+    top: 20px;
     left:100px;
 `
 export const CustomUpload: React.FC = () => {

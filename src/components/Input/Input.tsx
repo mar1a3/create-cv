@@ -15,6 +15,7 @@ interface CustomStyles {
 const StylesCustomInput = styled.div<Omit<CustomInputProps, 'label' | 'placeholder'>>`
     height: 90px;
     & p{
+        margin-top: -10px;
         font-size: 30px;
         width:400px;
     }

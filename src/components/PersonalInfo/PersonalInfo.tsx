@@ -34,8 +34,8 @@ const InfoBlock = styled.div`
     align-items: flex-start;
     padding:20px 20px;
     width: 900px;
-    height: 600px;
-    top: 80px;
+    height: 500px;
+    top: 60px;
     background-image:url(${Hologram});
     margin-left: 50px;
     border-radius: 20px;
@@ -44,13 +44,14 @@ const InfoBlock = styled.div`
         content: '';
         position: absolute;
         width: 1000px;
-        height: 550px;
+        height: 450px;
         right: -30px;
         top: 50px;
         border-radius: 30px;
         backdrop-filter: blur(10px);
     }
     & p{
+        margin-top:0px;
         font-size:35px;
         color:white;
     }
@@ -86,7 +87,7 @@ export const PersonalInfo = () => {
                     <CustomInput label="Location" placeholder="Location" />
                     <CustomInput label="Phone number" placeholder="Phone number" />
                     <p>Date of birth</p>
-                    <CustomCalendar customStyles={{ position: 'relative', top: '20px', left: '100px' }} />
+                    <CustomCalendar customStyles={{ position: 'relative', top: '15px', left: '100px' }} />
                     <CustomUpload />
                 </InfoBlock>
             </SectionPaper>
