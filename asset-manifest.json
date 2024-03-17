@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/create-cv/static/js/main.9a9ad791.js",
+    "static/media/tornPaperReverse.png": "/create-cv/static/media/tornPaperReverse.61fc6a10412d54ced794.png",
+    "static/media/tornPaper1.2.png": "/create-cv/static/media/tornPaper1.2.5b4859d3c021368d725a.png",
+    "static/media/hologram.jpg": "/create-cv/static/media/hologram.fd5aa7c37d5d73b21efb.jpg",
+    "static/media/hologram2.jpg": "/create-cv/static/media/hologram2.b0ed4c16f0e5db708900.jpg",
+    "static/media/plastic.jpg": "/create-cv/static/media/plastic.16affd7b958ab3722b41.jpg",
+    "static/media/hologram5.jpg": "/create-cv/static/media/hologram5.884a47d454e2617fba9c.jpg",
+    "static/media/blackTorn.jpg": "/create-cv/static/media/blackTorn.7ea518a4f180954b270f.jpg",
+    "index.html": "/create-cv/index.html",
+    "main.9a9ad791.js.map": "/create-cv/static/js/main.9a9ad791.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9a9ad791.js"
+  ]
+}
