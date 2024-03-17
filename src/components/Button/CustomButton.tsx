@@ -1,8 +1,12 @@
 import React from 'react';
-import { Button, Flex } from 'antd';
+import { Button } from 'antd';
 
-export const CustomButton: React.FC = () => (
+interface CustomButtonProps {
+    onClick:()=>void;
+}
 
-    <Button block style={{ width: '800px' }}>Add more</Button>
+export const CustomButton: React.FC<CustomButtonProps> = ({onClick}) => (
+
+    <Button onClick={onClick} block style={{ width: '800px' }}>Add more</Button>
 
 );
