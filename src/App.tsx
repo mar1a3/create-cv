@@ -1,11 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store'
 import { MainPage } from './pages/MainPage';
 
 function App() {
   return (
-    <div className="App">
-      <MainPage />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <MainPage />
+      </div>
+    </Provider>
   );
 }
 

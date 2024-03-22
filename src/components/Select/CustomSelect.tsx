@@ -1,8 +1,6 @@
 import React from 'react';
 import { Select, Space } from 'antd';
 
-
-
 interface CustonSelectProps {
   options: {
     value: string; label: string;
